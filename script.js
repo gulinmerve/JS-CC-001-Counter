@@ -7,29 +7,24 @@ addCountBtn.addEventListener("click", increase);
 
 let count = 0;
 
-function increase(){
+function increase() {
     count++;
     counter.innerHTML = count;
-    if (count>0) {
-        counter.style.color = "blue";
-    }
-    else if (count<0){ 
-        counter.style.color = "red";
-    } else {
-        counter.style.color = "white"
-    }
-    
-};
+    colorChange();
+}
 
 function decrease() {
     count--;
     counter.innerHTML = count;
-    if (count>0) {
+    colorChange();
+}
+
+function colorChange() {
+    if (count > 0) {
         counter.style.color = "blue";
-    }
-    else if (count<0){ 
+    } else if (count < 0) {
         counter.style.color = "red";
     } else {
-        counter.style.color = "white"
+        counter.style.color = "white";
     }
-};
+}
