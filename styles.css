@@ -1,0 +1,36 @@
+body{
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgb(206, 132, 97);
+    color: white;
+}
+.counter-box{
+    flex: 0 0 70%;
+    text-align: center;
+    padding: 1rem;
+    font-weight: bold;
+    border: 10px solid blueviolet;
+}
+.counter {
+    font-size: 6rem;
+}
+#title{
+    font-size: 4rem;
+}
+.btn{
+    background: #fff;
+    border-radius: 8px;
+    font-size: 2rem;
+    padding: 0.5rem;
+    margin: 0.5rem 0.25rem;
+    outline: none;
+}
+.btn:hover{
+    background-color: greenyellow;
+    color: black;
+}
+.btn:active{
+    box-shadow: none;
+}
